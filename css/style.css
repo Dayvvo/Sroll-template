@@ -14,6 +14,11 @@ ul {
     display: none !important;
   }
 }
+
+div.about >div >div:nth-child(1){
+    text-align: center;
+}
+
 body {
   margin: 0;
   padding: 0;
