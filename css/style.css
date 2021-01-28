@@ -1,0 +1,343 @@
+a,
+a:focus {
+  color: unset;
+  text-decoration: unset;
+}
+ul {
+  list-style-type: none;
+}
+.marginup {
+  margin-top: 115px;
+}
+@media (min-width: 600px) {
+  #scroll {
+    display: none !important;
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: century gothic;
+}
+body .slidebar {
+  position: absolute;
+  top: -200px;
+  z-index: 7;
+  width: 100%;
+  background: #ececec;
+  transition: 1.2s;
+}
+body .slidebar ul {
+  padding-left: unset;
+  margin-top: unset;
+  margin-bottom: unset;
+}
+body .slidebar ul li {
+  width: 100%;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  text-align: center;
+}
+body .slidebar ul li:nth-child(1) {
+  border-bottom: 1px solid rgba(136, 139, 141, 0.5);
+}
+body .slidenow {
+  top: 55px;
+}
+body header {
+  background: #fff;
+  width: 100%;
+}
+body header nav {
+  position: fixed;
+  top: 0;
+  background: #fff;
+  width: 100%;
+  left: 0;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.06);
+  z-index: 20;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+  font-size: 110%;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+body header nav .scroll {
+  display: flex;
+  align-items: center;
+  font-size: large;
+}
+body header nav .logo {
+  display: flex;
+}
+body header nav .logo img {
+  max-width: 40px;
+  max-height: 25px;
+}
+body header nav .logo > div:nth-child(1) {
+  padding-top: 0.2em;
+}
+body header nav .logo div {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 170%;
+  color: #1a1a1d;
+  padding-left: 0.15em;
+  padding-right: 0.15em;
+}
+body header nav ul {
+  display: none;
+  justify-content: space-between;
+}
+@media (min-width: 1000px) {
+  body header nav ul {
+    min-width: 25%;
+  }
+}
+body header nav ul a {
+  padding: 0.6em;
+  border-radius: 4px;
+  margin-left: 1.2em;
+}
+body header nav ul .log_in {
+  border: 1px solid #0c315e;
+  padding-left: 1.2em;
+  padding-right: 1.2em;
+}
+body header nav ul .log_in:hover {
+  background: #0c315e;
+  color: #fff;
+  transition: 0.5s;
+}
+body header nav ul .get_start {
+  background: #0c315e;
+  color: #fff;
+}
+@media (min-width: 350px) {
+  body header nav {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+@media (min-width: 650px) {
+  body header nav {
+    margin-top: unset;
+    margin-bottom: unset;
+  }
+  body header nav .scroll {
+    display: none;
+  }
+  body header nav ul {
+    display: flex;
+  }
+}
+@media (min-width: 1000px) {
+  body header nav {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+}
+body main {
+  margin-top: 60px;
+}
+body main .cover_img {
+  background: url(../images/photo-of-planner-and-writing-materials-760710.jpg);
+  min-height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main .cover_img > div {
+  color: #fff;
+  padding: 0.7em 1emxs;
+  font-size: xxx-large;
+  text-align: center;
+  box-sizing: content-box;
+}
+body main .cover_img > div .theme {
+  font-size: x-large;
+  max-width: 80%;
+  margin: auto;
+  margin-block-start: 0.5em;
+}
+@media (min-width: 1000px) {
+  body main .cover_img > div .theme {
+    max-width: 80%;
+  }
+}
+body main .cover_img > div > div:nth-child(2) {
+  margin-top: 0.4em;
+}
+body main .cover_img > div a {
+  padding: 0.8em;
+  background: #0c315e;
+  color: #fff;
+  border-radius: 35px;
+  font-size: x-large;
+  margin-block-start: 3.5em;
+}
+body main .about {
+  display: flex;
+  justify-content: center;
+  padding-top: 5em;
+  padding-bottom: 5em;
+  background: #ececec;
+}
+body main .about div.center {
+  display: flex;
+  font-size: 200%;
+  font-weight: 800;
+  justify-content: center;
+  margin-bottom: 1.2em;
+}
+body main .about .grids {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+@media (min-width: 600px) {
+  body main .about .grids {
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 5em;
+  }
+}
+body main .about .grids > div {
+  text-align: center;
+}
+body main .about .grids .img_icon {
+  display: flex;
+  justify-content: center;
+}
+body main .about .grids .img_icon div {
+  padding-bottom: 0.4em;
+  border-bottom: 4px solid #0c315e;
+  width: 46%;
+}
+body main .about .grids .img_icon div img {
+  max-width: 60px;
+  max-height: 60px;
+}
+body main .about .grids .captn {
+  margin-top: 1em;
+}
+body main .gridleft {
+  padding-top: 4em;
+  padding-bottom: 4em;
+  font-size: 140%;
+  background: #0c315e;
+  color: #fff;
+}
+body main .gridleft > div {
+  display: flex;
+}
+body main .gridleft .head {
+  text-align: center;
+  display: unset;
+}
+body main .gridleft .content {
+  justify-content: center;
+}
+body main .gridleft form > div {
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+}
+body main .gridleft .input_div > div {
+  font-size: medium;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+}
+body main .gridleft form div input {
+  padding: 1em;
+  border-radius: 4px;
+  outline-width: none !important;
+  border: none;
+  min-width: 260px;
+  font-size: 75%;
+}
+@media (max-width: 300px) {
+  body main .gridleft form div input {
+    min-width: 95%;
+  }
+}
+@media (min-width: 350px) {
+  body main .gridleft form div input {
+    min-width: 300px;
+  }
+}
+@media (min-width: 450px) {
+  body main .gridleft form div input {
+    min-width: 350px;
+  }
+}
+@media (min-width: 700px) {
+  body main .gridleft form div input {
+    min-width: 300px;
+    padding: 1.2em;
+  }
+}
+@media (min-width: 1000px) {
+  body main .gridleft form div input {
+    min-width: 350px;
+  }
+}
+body main .gridleft #sub_btn {
+  width: 100%;
+  background: #db443f;
+  color: #fff;
+  border: 2px solid #0c315e;
+}
+@media (min-width: 700px) {
+  body main .gridleft {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+  body main .gridleft .head {
+    text-align: unset;
+    display: flex;
+  }
+}
+@media (min-width: 1000px) {
+  body main .gridleft .gridleft {
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+  }
+}
+body footer {
+  text-align: center;
+}
+body footer a {
+  padding: 1px 0.6em;
+}
+body footer > div:nth-child(1) {
+  padding: 0.7em 1px;
+}
+
+@media(min-width:360px){
+  body footer .footnote {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em 0.8em;
+  }
+  .footnote >div:nth-child(1){
+    margin-bottom: unset;
+  }  
+}
+body footer .footnote {
+  padding: 0.5em 0.8em;
+}
+.footnote >div:nth-child(1){
+  margin-bottom: 0.5em;
+}
+
+#scroll{
+  display: flex;
+  align-items: center;
+}
